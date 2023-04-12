@@ -5,6 +5,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import "./Navbar.css";
 import image from "../../assets/LOGO-removebg-preview.png";
 import { Link } from "react-router-dom";
+import Mode from "../Mode/Mode";
 
 export default function Navbar() {
   return (
@@ -52,9 +53,7 @@ export default function Navbar() {
 
         <div className="navbar-end">
           <div className="form-control">
-            <label className="label cursor-pointer">
-              <input type="checkbox" className="toggle" checked />
-            </label>
+            <Mode />
           </div>
           <button className="btn btn-ghost btn-circle">
             <svg

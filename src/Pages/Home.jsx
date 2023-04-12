@@ -1,7 +1,6 @@
 import Footer from "../Component/Footer/Footer.jsx";
 import Herohome from "../Component/Herohome/Herohome.jsx";
 import Carte from "../Component/Carte/Carte.jsx";
-import movie from "../Datamovie/movies.json";
 import movie1 from "../Datamovie/movies.json";
 import Pagination from "../Component/Pagination/Pagination.jsx";
 
