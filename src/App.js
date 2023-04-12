@@ -18,7 +18,7 @@ const router = createBrowserRouter(
     
       <Route path="/" element={<Navbar/>}>
         <Route index element={<Home/>}/>
-        <Route path='Description' element={<Description/>}/>
+        <Route path='Description/:movie' element={<Description/>}/>
         <Route path='Stream' element={<Stream/>}/>
        
       </Route >

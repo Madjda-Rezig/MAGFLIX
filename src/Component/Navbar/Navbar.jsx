@@ -4,11 +4,12 @@ import { RxAvatar } from "react-icons/rx";
 import { NavLink, Outlet } from "react-router-dom";
 import "./Navbar.css";
 import image from "../../assets/LOGO-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-300">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -32,7 +33,9 @@ export default function Navbar() {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Acceuil</a>
+                <Link to={"/"}>
+                  <a>Acceuil</a>
+                </Link>
               </li>
               <li>
                 <a>Série</a>
@@ -46,7 +49,13 @@ export default function Navbar() {
         <div className="navbar-center">
           <a className="btn btn-ghost normal-case text-xl">MAGFLIX</a>
         </div>
+
         <div className="navbar-end">
+          <div className="form-control">
+            <label className="label cursor-pointer">
+              <input type="checkbox" className="toggle" checked />
+            </label>
+          </div>
           <button className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"

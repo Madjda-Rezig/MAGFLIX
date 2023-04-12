@@ -1,21 +1,23 @@
+import image from "../../assets/mercredi.jpg";
+
 const Herohome = () => {
   return (
     <div
-      className="hero min-h-screen"
+      className="hero min-h-screen mb-8 justify-start"
       style={{
-        backgroundImage: `url("../../assets/LOGO-removebg-preview.png")`,
+        backgroundImage: `url(${image})`,
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-          <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+      <div className="hero-content text-neutral-content">
+        <div className="max-w-md ml-16">
+          <h1 className="mb-9 text-7xl font-bold ">WEDENSDAY ADAMS</h1>
+          <p className="mb-8 mt-7">
+            Brillante, sarcastique et un peu morte à l'intérieur, Mercredi
+            Addams enquête sur une série de crimes tout en se faisant des amis
+            (et des ennemis) à l'Académie Nevermore
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary">WATCH NOW</button>
         </div>
       </div>
     </div>

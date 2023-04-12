@@ -1,37 +1,19 @@
-import image1 from "../../assets/POSTER/Action/dune.jpg";
-import image2 from "../../assets/POSTER/Action/The Adam Project.jpg";
-import image3 from "../../assets/POSTER/Action/The Adam Project.jpg";
-import image4 from "../../assets/POSTER/Action/The Adam Project.jpg";
-import image5 from "../../assets/POSTER/Action/The Adam Project.jpg";
-import image6 from "../../assets/POSTER/Action/Uncharted (2022).jpg";
-
-const Carte = () => {
+import { Link } from "react-router-dom";
+const Carte = ({ titre, image }) => {
   return (
-    <div className="card w-80 bg-base-100 shadow-xl ">
+    <div className="card w-72 bg-base-100 shadow-xl mb-9 justify-center ml-16">
       <figure>
-        <img src={image1} />
+        <img src={image} />
       </figure>
       <div className="card-body">
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Watch Now</button>
-        </div>
-      </div>
+        <div className="card-actions justify-center grid">
+          <h1 className="text-black text-2xl text-center">{titre}</h1>
 
-      <figure>
-        <img src={image2} />
-      </figure>
-      <div className="card-body">
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Watch Now</button>
-        </div>
-      </div>
-
-      <figure>
-        <img src={image3} />
-      </figure>
-      <div className="card-body">
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Watch Now</button>
+          <Link to={`/Description/${titre}`}>
+            <button className="btn btn-primary justify-center">
+              Watch Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
