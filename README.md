@@ -4,14 +4,6 @@
 
 Magflix is a simple web application built using React and Tailwind CSS. It allows you to browse and search for movies and TV shows. This project serves as a basic template for building similar web applications.
 
-## Table des matières
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Développement](#développement)
-- [Contribuer](#contribuer)
-- [License](#license)
-
 ## Installation
 
 Pour installer Magflix sur votre système, suivez les étapes ci-dessous :
