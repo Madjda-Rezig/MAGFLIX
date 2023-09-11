@@ -12,8 +12,8 @@ function Mode() {
   return (
     <label className="swap swap-rotate">
       <input onClick={toggleTheme} type="checkbox" />
-      <div className="swap-on">DARKMODE</div>
-      <div className="swap-off">LIGHTMODE</div>
+      <div className="swap-on">DARK</div>
+      <div className="swap-off">LIGHT</div>
     </label>
   );
 }
